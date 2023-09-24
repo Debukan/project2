@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fon.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 50px 65px;
+    background-color: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+.buttons {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 50px 65px;
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn1:hover {
+    background-color: blue;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 50px 65px;
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn2:hover {
+    background-color: blue;
+}
+
+
+.results {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 50px 65px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: blueviolet;
+}
+
+.prof {
+    font-size: 25px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; /* Расстояние между радиокнопкой и текстом */
+    cursor: pointer;
+}
+
+
+input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #007BFF; 
+    border-radius: 50%;
+    background-color: transparent;
+    transition: border-color 0.3s ease; 
+}
+
+
+input[type="radio"]:checked + label:before {
+    background-color: #007BFF;
+    border-color: #007BFF; 
+}
+
